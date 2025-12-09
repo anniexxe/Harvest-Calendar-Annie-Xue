@@ -1,0 +1,122 @@
+ body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fbf5f5;
+            padding: 20px;
+        }
+        .receipt {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 50px;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 0;
+            font-size: 25px;
+            color:dimgray;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+        .item:nth-child(odd) {
+            background-color: #eeeeee;
+        }
+        .total {
+            border-top: 1px solid #000;
+            font-weight: bold;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+        .image {
+            width: 250px;
+            margin: 25px;
+        }
+        
+         .image-wrapper {
+            position: relative;
+            display: inline-block;
+         }
+        
+        
+        
+        .christmas-receipt {
+            margin-top: 100px;
+            margin-left: 120px;
+        }
+       
+        .new-year-receipt {
+            margin-top: -820px;
+            margin-right: 100px;
+            float:right;
+        }
+
+         a {
+            text-decoration: none;
+            color:#000; 
+        }
+         .hover-text {
+            position: absolute;
+            top: 50%;
+            left: 110%; 
+            transform: translateY(-50%);
+            color: black; 
+            white-space: nowrap; 
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 5px; 
+            border-radius: 3px;
+        }
+        .new-year-receipt{
+            margin:-890px;
+            float:right;
+            margin-right: 100px;
+        }
+         .image-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-wrapper:hover .hover-text {
+            opacity: 1;
+        }
+
+        .ny-hover-text {
+            position: absolute;
+            top: 50%;
+            left: -170%; 
+            transform: translateY(-50%);
+            color: black;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-wrapper:hover .ny-hover-text {
+            opacity: 1;
+        }
+
+        .back-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: dimgray;
+    font-size: 16px;
+    position: absolute; 
+    left: 20px; 
+}
+
+.back-icon {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 8px; 
+}
