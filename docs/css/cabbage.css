@@ -1,0 +1,75 @@
+
+    :root{
+      --paper:#f6f5f0;
+      --accent:#7fb77e; 
+      --accent-2:#b9dfb6;
+      --muted:#8a8a8a;
+      --ink:#222;
+      --typewriter: 'Special Elite', 'Roboto Mono', monospace;
+      --card-bg: rgba(255,255,255,0.85);
+      --shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+    
+    body{
+      margin:0;
+      background-color: #f6f5f0;
+    }
+
+    
+
+    .container{max-width:1200px;margin:48px auto;padding:28px;position:relative}
+    .grid{display:grid;grid-template-columns: 1fr 420px;gap:32px;align-items:start;position:relative}
+
+
+    .hero{
+      background:transparent;
+      border-radius:0;
+      padding:0;
+      box-shadow:none;
+      display:flex;
+      gap:18px;
+      align-items:flex-start;
+      position:relative;
+    }
+    .photo{border-radius:0;overflow:hidden;height:420px;display:flex;align-items:center;justify-content:flex-start;position:relative;margin-left: 0;}
+    .photo img{width:110%;height:110%;object-fit:cover;transform:translateX(-6%)}
+    .photo::after{
+      content:"";
+      position:absolute;left:8%;bottom:12%;width:46%;height:46%;background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(127,183,126,0.06));transform:skewX(-12deg);border-radius:8px;mix-blend-mode:overlay;
+    }
+
+    
+    .side{display:flex;flex-direction:column;gap:18px;position:relative;z-index:2}
+    .collage{background:transparent;padding:10px;border-radius:0}
+    .collage .title{font-family:'Amatic SC', cursive;font-size:46px;margin:8px 0;color:var(--accent);letter-spacing:2px}
+    .cabbages{display:flex;gap:8px;align-items:center}
+    .cabbages img{width:92px;height:92px;object-fit:cover;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+
+    .card{background:transparent;padding:0;border-radius:0;box-shadow:none}
+    h1{font-family:'Amatic SC',cursive;font-size:56px;margin:0 0 6px;letter-spacing:1px}
+    .lede{color:var(--muted);margin-bottom:12px;font-family:var(--typewriter);font-size:15px;letter-spacing:1px; line-height: 2.3;}
+
+    
+
+    .ingredients, .steps{margin-top:14px}
+    .ingredients strong{display:block;margin-bottom:6px;font-family:var(--typewriter);font-weight:700}
+    .ingredients ul{columns:2;list-style:none;padding:0;margin:6px 0;font-family:var(--typewriter);font-size:14px}
+    .ingredients li{padding:6px 0}
+    .steps ol{padding-left:18px}
+
+    .big-tip{margin-top:12px;padding:0;border-left:none;background:none;font-size:14px;color:var(--muted);font-family:var(--typewriter)}
+   
+    .back-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: dimgray;
+    font-size: 16px;
+    position: absolute; 
+    left: 20px; 
+    font-family: 'Courier New', Courier, monospace;
+    }
+
+.back-icon {
+    margin-right: 8px;   
+}
